@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paragraph - pgp-signed example</title>
+
+    <style>
+        body {
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <h1><code>&lt;pgp-signed&gt;</code> example : Paragraph</h1>
+
+    <p>Signature checking of a single paragraph using a provided pgp key and an armored messages</p>
+
+    <pgp-signed key-src="https://keys.openpgp.org/vks/v1/by-fingerprint/ACDE9D4885A50087714AF933C4B28FD2729941CE" >
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Hello world !
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCgAdFiEErN6dSIWlAIdxSvkzxLKP0nKZQc4FAmQCTtEACgkQxLKP0nKZ
+Qc753xAAq9RMphdkdfkDR56ZYCCqQud+FNlnH3Zt1oSZopXUz3bA7xTFWPdlKOOe
+aAu7/F8EocmLD7LbhdFdoxavrLnCIkNhQ3hehVwSsMGS+FCBTRdpWCMrAz5420W3
+siQcdy6oAXV/MRpccjx6bIZpdZCX1Jd7+JfCOHNxVBUT3Ptzu7O97wulCgY9FqA+
+UgxTZ+twAOFsFb8XLrh5L2Vu+dwqG05AAOYsex7ustXniHVlxYYWas9PuNLogEtL
+Hr9jP0H4cWnrjQ02NH2W4ZuaEYnUTz4kQmGNMCRLPhtCZnPBrQ5ARWAP9ighvNyH
+GFGLItelJPkfqJBV9MFVXIlHTKH0iGLJhQgMjZ0+/tTNmlnTd9/HUsfbcGvcZYyK
+CxCtbG2ZJud2J9zKjQB1SZUGCOPx8yamomdQuMZTFnyjBOu9tC2/6P6CI2vW8Xqj
+InR2ASMLnR2026aVoeAGYiSQCP+Bo5fsWiPWmuAehgnhA0JW0wYTh+4TCjSoX6dp
+WYun7ywTr7l91Ut72T9+/fnLkxhkWBwGGPaw/ziRr41g9SIGq9KLBD7puBxNx/tl
+NYqL81N8t9GVc3rNqbKugOXdPsvV5uMRltCe5Sd/NfpaGG/Kyl5/LLMtgxL+NJRb
+fdEocKLfHptF2ljMnD3LJuK4eW3ru/iOuhWeeJr3Qy1PXjMiSXs=
+=uHqo
+-----END PGP SIGNATURE-----
+    </pgp-signed>
+
+    <script src="../dist/pgp-signed.js"></script>
+</body>
+</html>

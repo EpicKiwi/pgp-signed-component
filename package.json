@@ -1,0 +1,25 @@
+{
+  "name": "pgp-signed",
+  "version": "1.0.0",
+  "description": "Component verifing digital signature of PGP message",
+  "main": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "webcomponent",
+    "pgp"
+  ],
+  "author": "EpicKiwi <me@epickiwi.fr>",
+  "license": "GPL-3.0-or-later",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "openpgp": "^5.7.0",
+    "rollup": "^3.18.0",
+    "tslib": "^2.5.0"
+  }
+}

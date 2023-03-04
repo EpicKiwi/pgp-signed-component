@@ -1,0 +1,23 @@
+name: Pre-release
+run-name: ${{ github.actor }} is building a pre-release
+on:
+  push:
+    branches:
+      - "master"
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - run: |
+        npm install
+        npm run build
+    
+    - uses: marvinpinto/action-automatic-releases@latest
+      with:
+        files: "dist/*"
+        title: "Development Build"
+        prerelease: true
+        automatic_release_tag: "latest"
+        repo_token: ${{ secrets.GITHUB_TOKEN }}
