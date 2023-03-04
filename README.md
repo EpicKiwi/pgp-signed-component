@@ -4,7 +4,7 @@
 
 ## Getting started
 
-Start by downloading source file from `dist/pgp-signed.js` and include it in your webpage with a script tag.
+Start by downloading source file `pgp-signed.js` from the [release page](https://github.com/EpicKiwi/pgp-signed-component/releases/latest) and include it in your webpage with a script tag.
 
 ```html
 <script src="pgp-signed.js"></script>
