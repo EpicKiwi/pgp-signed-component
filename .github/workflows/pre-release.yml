@@ -10,13 +10,14 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    
     - run: |
         npm install
         npm run build
     
     - uses: marvinpinto/action-automatic-releases@latest
       with:
-        files: "dist/*"
+        files: "dist/*.js"
         title: "Development Build"
         prerelease: true
         automatic_release_tag: "latest"
